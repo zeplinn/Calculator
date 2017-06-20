@@ -1,0 +1,33 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        SizeToContent="WidthAndHeight">
+    <Grid x:Name="appLayout" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <ContentPresenter/>
+        <WrapPanel Grid.Row="1" ItemHeight="28" ItemWidth="32" MaxWidth="96" >
+            <Button x:Name="seven" Content="7" />
+            <Button x:Name="eight" Content="8"/>
+            <Button x:Name="nine" Content="9"/>
+            <Button x:Name="four" Content="4"/>
+            <Button x:Name="five" Content="5"/>
+            <Button x:Name="six" Content="6"/>
+            <Button x:Name="one" Content="1"/>
+            <Button x:Name="two" Content="2"/>
+            <Button x:Name="three" Content="3"/>
+            <Button x:Name="lp" Content="("/>
+            <Button x:Name="zero" Content="0"/>
+            <Button x:Name="rp" Content=")"/>            
+        </WrapPanel>
+    </Grid>
+
+</Window>
